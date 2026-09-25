@@ -1,12 +1,13 @@
 :root {
-  --font-primary:  "Roboto", serif;
+  --font-primary: "Roboto", serif;
   --font-secondary: "Montserrat", serif;
 
 }
+
 .app-container {
   font-family: var(--font-primary);
-  background-color: #1e1e2f; 
-  color: #e0e0e0; 
+  background-color: #1e1e2f;
+  color: #e0e0e0;
   overflow-y: hidden;
   height: 100vh;
   width: 100%;
@@ -21,32 +22,44 @@
   font-size: 3rem;
 
 }
+
 .main-content {
-  background-color: #f5f5f5; /* Cinza claro para destaque */
-  color: #121212; /* Texto escuro para contraste */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  border: 2px solid #dcdcdc; /* Borda sutil */
-  border-radius: 12px; /* Bordas arredondadas */
+  background-color: #f5f5f5;
+  /* Cinza claro para destaque */
+  color: #121212;
+  /* Texto escuro para contraste */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Sombra suave */
+  border: 2px solid #dcdcdc;
+  /* Borda sutil */
+  border-radius: 12px;
+  /* Bordas arredondadas */
   width: 90%;
   height: 80%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação de destaque */
-  overflow-y: scroll;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animação de destaque */
+  overflow-y: auto;
   overflow-x: hidden;
 
 }
 
 .main-content:hover {
-  transform: translateY(-5px); /* Elevação ao passar o mouse */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+  transform: translateY(-5px);
+  /* Elevação ao passar o mouse */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  /* Sombra mais forte */
 }
 
 h2 {
-  color: #333333; /* Título mais escuro no main-content */
+  color: #333333;
+  /* Título mais escuro no main-content */
 }
 
 button {
-  background-color: #333333; /* Fundo escuro */
-  color: #ffffff; /* Texto claro */
+  background-color: #333333;
+  /* Fundo escuro */
+  color: #ffffff;
+  /* Texto claro */
   border: none;
   border-radius: 8px;
   padding: 10px 15px;
@@ -55,5 +68,6 @@ button {
 }
 
 button:hover {
-  background-color: #555555; /* Fundo mais claro no hover */
+  background-color: #555555;
+  /* Fundo mais claro no hover */
 }

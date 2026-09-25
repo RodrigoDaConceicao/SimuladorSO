@@ -1,45 +1,109 @@
 .simulation-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 1rem 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .process-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .process-row h4 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .process-timeline {
-    display: flex;
-    gap: 2px;
-  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  /* align-items: center; */
+  width: 100%;
+  max-height: 60vh;
+  overflow-x: scroll;
+  overflow-y: auto;
+  flex-grow: 1;
+}
 
-  
-  .turnaround-info {
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
+.simulation-speed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
 
-  .timeline-block {
-    opacity: 0; /* Inicialmente invisível */
-    transform: scale(0.8); /* Inicialmente reduzido */
-    animation: fadeInScale 0.3s ease forwards;
-  }
-  
-  /* Animação para entrada gradual */
-  @keyframes fadeInScale {
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+.simulation-speed input {
+  vertical-align: middle;
+  width: 2rem;
+}
+
+.simulation-speed input:disabled svg {
+  color: gray;
+}
+
+.simulation-speed input[type=range] {
+  width: 6rem;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.process-row {
+  display: flex;
+  gap: 0.5rem;
+  height: 3rem;
+}
+
+.process-row h4 {
+  font-size: 1rem;
+  min-width: 125px;
+  margin: 0;
+  text-align: left;
+}
+
+.process-row h4 strong {
+  font-weight: bold;
+}
+
+.process-timeline {
+  display: flex;
+  align-items: stretch;
+}
+
+
+.turnaround-info {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.timeline-block {
+  border: 1px solid black;
+}
+
+.memory-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.memory-row {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 0;
+}
+
+.memory-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+}
+
+.memory-page.filled {
+  background-color: lightgray;
+}
+
+.memory-page.loading {
+  background-color: orange;
+}
+
+.memory-page.using {
+  background-color: lightgreen;
+}
+
+.memory-page.victim {
+  background-color: transparent;
+  color: orange;
+  border-color: orange;
+}

@@ -1,31 +1,146 @@
 .timeline-block {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    background-color: lightgray;
-  }
-  
-  .timeline-block.green {
-    background-color: green;
-    color: white;
-  }
-  
-  .timeline-block.yellow {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .timeline-block.light-gray {
-    background-color: lightgray;
-    color: black;
-  }
-  
-  .timeline-block.dark-gray {
-    background-color: rgb(95, 95, 95);
-    color: white;
-  }
+  width: 3rem;
+  height: 2rem;
+  background-color: lightgray;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
 
-  .timeline-block.red {
-    background-color: red;
-    color: white;
-  }
+.timeline-block p {
+  width: 100%;
+  text-align: center;
+}
+
+div p{
+  font-weight: bold;
+}
+
+.timeline-block.invisible {
+  background-color: white !important;
+  color: white !important;
+}
+.timeline-block.invisible p {
+  display: none;
+}
+
+.timeline-block.progress {
+  background-color: white !important;
+}
+.timeline-block.progress p{
+  display: none;
+}
+
+.timeline-block.green {
+  background-color: green;
+  color: white;
+}
+.timeline-block.green p {
+  display: block;
+}
+
+.timeline-block.yellow {
+  background-color: gold;
+  color: white;
+  
+}
+.timeline-block.yellow p {
+  display: block;
+  color: white;
+}
+
+.timeline-block.orange {
+  background-color: orange;
+  color: white;
+  
+}
+.timeline-block.orange p {
+  display: block;
+  color: white;
+}
+
+.timeline-block.light-gray {
+  background-color: lightgray;
+  color: black;
+}
+.timeline-block.light-gray p {
+  display: block;
+}
+
+.timeline-block.dark-gray {
+  background-color: rgb(95, 95, 95);
+  color: white;
+}
+.timeline-block.dark-gray p {
+  display: block; /* ou inline, conforme necessário */
+}
+
+.timeline-block.red {
+  background-color: red;
+  color: white;
+}
+.timeline-block.red p {
+  display: block; /* ou inline, conforme necessário */
+}
+
+
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.timeline-progress.green {
+  background-color: green;
+  color: white;
+}
+.timeline-progress.green p {
+  display: block;
+}
+
+.timeline-progress.yellow {
+  background-color: gold;
+  color: white;
+  
+}
+.timeline-progress.yellow p {
+  display: block;
+  color: white;
+}
+
+.timeline-progress.orange {
+  background-color: orange;
+  color: white;
+  
+}
+.timeline-progress.orange p {
+  display: block;
+  color: white;
+}
+
+.timeline-progress.light-gray {
+  background-color: lightgray;
+  color: black;
+}
+.timeline-progress.light-gray p {
+  display: block;
+}
+
+.timeline-progress.dark-gray {
+  background-color: rgb(95, 95, 95);
+  color: white;
+}
+.timeline-progress.dark-gray p {
+  display: block; /* ou inline, conforme necessário */
+}
+
+.timeline-progress.red {
+  background-color: red;
+  color: white;
+}
+.timeline-progress.red p {
+  display: block; /* ou inline, conforme necessário */
+}
